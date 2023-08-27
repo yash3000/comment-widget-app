@@ -1,0 +1,127 @@
+.commentApp {
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.commentList {
+  width: 100%;
+}
+
+.commentForm {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.commentForm-img{
+    object-fit: contain;
+    width: 2.5rem;
+    margin-right: 8px;
+    border-radius: 8px;
+}
+
+.commentForm textarea {
+  width: 70%;
+  margin-right: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 150ms;
+}
+
+.action-buttons{
+    margin-right: 0.5rem;
+    position: relative;
+}
+.action-buttons .up-arrow{
+    position: relative;
+    width: 16px;
+    top: 13px
+}
+.action-buttons .down-arrow{
+    transform: rotate(180deg);
+    position: relative;
+    width: 16px;
+    top: 12px
+}
+
+.commentForm textarea:focus {
+    outline: none;
+}
+
+.comment-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.comment-box img{
+    object-fit: contain;
+    width: 2.5rem;
+    margin-right: 8px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.comment-box-text{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.comment-box-text .user-name{
+    color: #555bff;
+    font-weight: 700;
+    display: flex;
+}
+.user-name .user-name-text{
+    margin-right: 0.5rem;
+}
+
+.user-name .action-period{
+    color: #ccc;
+    position: relative;
+    top: 4px;
+    margin-right: 0.25rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user-name .user-name-time{
+    color: #ccc;
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    font-weight: 500;
+}
+
+.comment-box-text .comment-box-action-items{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: baseline;
+}
+
+.comment-box-text .comment-box-action-items .action-buttons {
+    cursor: pointer;
+}
+
+.comment-box-text .comment-box-action-items > *{
+    color: #ccc;
+    margin-right: 4px;
+    display: inline;
+}
+
+.comment-box-text .comment-box-action-items .action-period{
+    position: relative;
+    top: -4px
+}
